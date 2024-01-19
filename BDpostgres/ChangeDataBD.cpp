@@ -13,7 +13,7 @@ ChangeDataBD::~ChangeDataBD() {
 }
 
 bool ChangeDataBD::connectDB() {
-    const char* conninfo = "dbname=kursdb user=bogdan32113 password=I0m1VQqzFjnJ host=ep-young-truth-04408351.eu-central-1.aws.neon.tech port=5432 client_encoding=WINDOWS-1251";
+    const char* conninfo = "dbname=dbpostgres user=bogdan32113 password=I0m1VQqzFjnJ host=ep-young-truth-04408351.eu-central-1.aws.neon.tech port=5432 client_encoding=WINDOWS-1251";
 
     // Установка соединения
     connection = PQconnectdb(conninfo);

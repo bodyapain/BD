@@ -18,7 +18,7 @@ std::string generateRandomString(int length) {
 }
 
 ChangeDataBD::ChangeDataBD() {
-    int rc = sqlite3_open("./src/application//changeDataBD/your_database.db", &db);
+    int rc = sqlite3_open("./BDsqlite/your_database.db", &db);
 
     if (rc != SQLITE_OK) {
         std::cerr << "Cannot open database: " << sqlite3_errmsg(db) << std::endl;

@@ -3,7 +3,6 @@
 #include <string>
 #include <libpq-fe.h>
 #include <iostream>
-#include "sqlite/sqlite3.h"
 #include <vector>
 class ChangeDataBD
 {
@@ -31,7 +30,6 @@ public:
     bool checkDepartmentExists(const char* departmentId);
 
 private:
-    //поле с базой данных, в реализации public методов обращатьс¤ и работать с этим полем, измен¤¤ Ѕƒ
     PGconn* connection;
 
 }; // class ChangeDataWidget
